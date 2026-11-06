@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Undelix Privacy Policy</title>
+<meta name="description" content="Privacy Policy for the Undelix Android app.">
+<link rel="icon" href="../logo.svg" type="image/svg+xml">
+<style>
+  :root {
+    --brand: #7C5CFF;
+    --brand-2: #FF4D9D;
+    --accent: #B9A6FF;
+    --text: #EEF0FF;
+    --muted: #8C93B8;
+    --bg: #0A0D1A;
+    --card: #121729;
+    --border: #262D4A;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --accent: #5B3FE0;
+      --text: #161A33;
+      --muted: #5A6188;
+      --bg: #F4F3FF;
+      --card: #FFFFFF;
+      --border: #E2DEFA;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  header {
+    background:
+      radial-gradient(circle at 80% 0%, rgba(255,77,157,.35), transparent 55%),
+      linear-gradient(135deg, #1B1145, #0D0B24);
+    color: #fff;
+    padding: 40px 16px 32px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 18px; letter-spacing: .5px; }
+  .logo { width: 40px; height: 40px; border-radius: 10px; overflow: hidden; display: block; }
+  h1 { margin: 20px 0 4px; font-size: 30px; line-height: 1.25; }
+  .meta { opacity: .8; font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  main { padding: 24px 16px 48px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 8px 24px 24px; }
+  h2 { font-size: 20px; margin: 28px 0 8px; }
+  h3 { font-size: 16px; margin: 20px 0 6px; }
+  .muted { color: var(--muted); }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .92em; }
+  .summary {
+    border-left: 4px solid var(--brand);
+    background: color-mix(in srgb, var(--brand) 12%, transparent);
+    border-radius: 8px; padding: 12px 16px; margin-top: 20px;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  footer { text-align: center; font-size: 13px; color: var(--muted); padding: 0 16px 32px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img class="logo" src="../logo.svg" alt="">
+      Undelix
+    </div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective date: November 6, 2026 · Last updated: November 6, 2026</div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap card">
+    <div class="summary">
+      <strong>In short:</strong> Undelix looks for deleted photos, videos and files that are still stored
+      <em>on your device</em> and copies the ones you choose back to your gallery or Downloads folder. Your files,
+      file names and scan results never leave your phone. The app is free and shows ads; our advertising partners
+      collect limited device data to deliver those ads, as described in Section 4.
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>
+      This Privacy Policy explains how the Undelix Android app (“Undelix”, “the app”, “we”, “us”) handles
+      information. It applies to the app distributed on Google Play under the package name
+      <code>io.undelix.recovery</code>. By using the app you agree to this Policy.
+    </p>
+
+    <h2>2. What the app does on your device</h2>
+    <p>
+      Undelix scans your device storage for photos, videos and other files (documents, audio, archives and
+      installation packages) that remain in places you normally can’t see: the system trash, thumbnail caches,
+      app cache folders, hidden folders, the system “lost and found” folder, and media files saved without a file
+      extension. You can preview what was found and recover the files you select.
+    </p>
+    <ul>
+      <li><strong>All scanning happens locally.</strong> To find files, the app reads file names, sizes, dates,
+        folder structure and the first few bytes of a file (to recognise its type). This processing happens only on
+        your device. We do not upload your files, file names, file contents or scan results.</li>
+      <li><strong>Recovery is a local copy.</strong> Recovered files are copied into
+        <code>Pictures/Undelix</code>, <code>Movies/Undelix</code> or <code>Download/Undelix</code> on your device.</li>
+      <li><strong>Nothing is deleted without your confirmation.</strong> Files are only removed after you select them
+        and confirm the deletion.</li>
+      <li><strong>No guarantee of recovery.</strong> Files that have been fully erased from storage cannot be read
+        without system-level (root) access, which the app does not use.</li>
+    </ul>
+
+    <h2>3. Permissions we request</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Permission</th><th>Why we need it</th></tr>
+        <tr>
+          <td>All files access<br><span class="muted">(Android 11+; storage access on Android 8–10)</span></td>
+          <td>To scan the trash, caches, thumbnails and hidden folders for recoverable files, to copy the files you
+            choose back to public folders, and to delete files you select. Used only on the device.</td>
+        </tr>
+        <tr>
+          <td>Internet and network state</td>
+          <td>To load advertisements and to fetch app configuration (see Sections 4 and 5).</td>
+        </tr>
+        <tr>
+          <td>Advertising ID</td>
+          <td>Used by our advertising partners to deliver and measure ads (see Section 4).</td>
+        </tr>
+      </table>
+    </div>
+    <p class="muted">The app does not request access to your contacts, camera, microphone, call logs, SMS or precise location.</p>
+
+    <h2>4. Information collected by advertising partners</h2>
+    <p>
+      Undelix is free and supported by ads. Ads are served by <strong>Google AdMob</strong>, Google’s mobile
+      advertising platform. Through AdMob, ads may also be provided by third-party ad networks and bidders that Google
+      works with. When an ad is requested or shown, Google and these partners may automatically collect information
+      such as:
+    </p>
+    <ul>
+      <li>Your device’s advertising ID (Google Advertising ID)</li>
+      <li>IP address and approximate location derived from it (country or city level)</li>
+      <li>Device and app information: device model, operating system version, language, time zone, network type,
+        app version</li>
+      <li>Ad interaction data: which ads were shown, whether they were clicked, and related diagnostics</li>
+    </ul>
+    <p>
+      Partners use this information to deliver ads, limit how often you see the same ad, measure performance,
+      prevent fraud and, where permitted, show ads tailored to your interests. This collection is governed by each
+      partner’s own privacy policy, for example:
+    </p>
+    <ul>
+      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a></li>
+      <li><a href="https://support.google.com/admob/answer/9012903" rel="noopener">Ad technology providers that may serve ads through AdMob</a></li>
+    </ul>
+    <p>
+      We do not receive information from these partners that identifies you personally. We may receive aggregated
+      reports (such as the number of ad impressions and revenue) that do not identify individual users.
+    </p>
+
+    <h3>Your advertising choices</h3>
+    <ul>
+      <li>You can reset or delete your advertising ID, or opt out of personalized ads, in Android
+        <strong>Settings → Privacy → Ads</strong> (the exact path may vary by device).</li>
+      <li>If you opt out, you will still see ads, but they will be less relevant to you.</li>
+    </ul>
+
+    <h2>5. Information we collect ourselves</h2>
+    <p>
+      We do not require an account and do not collect your name, email address, phone number, contacts or photos
+      through the app. We do not use our own analytics or tracking servers.
+    </p>
+    <p>
+      The app uses <strong>Firebase Remote Config</strong> (provided by Google) to receive settings such as whether
+      certain ad formats are turned on. To deliver this configuration, Firebase processes a Firebase installation ID
+      and basic device and app information (such as app version, platform and language). See
+      <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and Security in Firebase</a>.
+    </p>
+    <p>
+      If you contact us by email (for example via “Feedback” in the app), we will receive your email address and
+      the content of your message. We use it only to respond to you and keep it only as long as needed for that
+      purpose.
+    </p>
+
+    <h2>6. Users in the EEA, UK and Switzerland</h2>
+    <p>
+      If you are located in the European Economic Area, the United Kingdom or Switzerland, we ask for your consent
+      before our advertising partners use your data for personalized advertising, as required by the GDPR, the
+      ePrivacy Directive and Google’s EU User Consent Policy. You can change your choice at any time from the app’s
+      Settings. If you do not consent, you may still see non-personalized ads.
+    </p>
+    <p>
+      Depending on where you live, you may have the right to access, correct, delete or restrict the processing of
+      your personal data, to object to processing, to data portability, and to lodge a complaint with your local data
+      protection authority. Because we do not hold personal data about you on our own systems, most requests about ad
+      data should be directed to the relevant advertising partner; we are happy to help you with that.
+    </p>
+
+    <h2>7. Users in the United States</h2>
+    <p>
+      We do not sell personal information for money. Under some US state laws (such as the California Consumer
+      Privacy Act), allowing advertising partners to collect identifiers for targeted advertising may be considered
+      “selling” or “sharing” personal information. You can opt out at any time by opting out of personalized ads
+      or deleting your advertising ID as described in Section 4.
+    </p>
+
+    <h2>8. Children’s privacy</h2>
+    <p>
+      Undelix is not directed to children under 13 (or under 16 in the EEA and UK), and we do not knowingly
+      collect personal information from children. If you believe a child has provided us with personal information,
+      please contact us and we will delete it.
+    </p>
+
+    <h2>9. Data retention and security</h2>
+    <p>
+      Since your files and scan results never leave your device, we do not retain them. Information collected by
+      advertising partners and Firebase is retained according to their policies. We take reasonable measures to
+      protect the limited information we handle, such as feedback emails, but no method of transmission or storage
+      is completely secure.
+    </p>
+
+    <h2>10. Changes to this Policy</h2>
+    <p>
+      We may update this Policy from time to time, for example when we add features or change advertising partners.
+      We will post the updated version on this page and change the “Last updated” date above. Significant changes
+      will also be noted in the app or on its Google Play page.
+    </p>
+
+    <h2>11. Contact us</h2>
+    <p>
+      If you have questions about this Policy or want to exercise your privacy rights, contact us at
+      <a href="mailto:zzz13221126@163.com">zzz13221126@163.com</a>.
+    </p>
+  </div>
+</main>
+
+<footer>© 2026 Undelix</footer>
+</body>
+</html>
